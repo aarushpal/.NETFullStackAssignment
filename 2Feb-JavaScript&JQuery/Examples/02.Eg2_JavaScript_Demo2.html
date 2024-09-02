@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Working with JavaScript</h3>
+    <hr />
+
+
+    <fieldset>
+        <legend>User Login </legend>
+
+        User Id : <input type="text" id="t1" />
+        <br /> <br />
+        Password : <input type="password" id="t2" />
+        <br /><br />
+        <input type="button" onclick="f1()" value="Login" />
+        <p id="p1"></p>
+    </fieldset>
+
+
+
+
+
+    <script>
+
+        function f1() {
+
+            let paraObj = document.getElementById("p1");
+            let txtObj = document.getElementById("t1");
+            let passwordObj = document.getElementById("t2");
+
+            let userId = txtObj.value;
+            let password = passwordObj.value;
+
+            if (userId == "admin" &&  password == "admin123") 
+            {
+                paraObj.innerHTML = "Welcome Admin User";   
+                paraObj.style.backgroundColor = "Green";
+                paraObj.style.color = "white";
+            }
+            else
+            {
+                paraObj.innerHTML = "Invalid User Id or Password";   
+                paraObj.style.backgroundColor = "Red";
+                paraObj.style.color = "white";
+            } 
+            
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>

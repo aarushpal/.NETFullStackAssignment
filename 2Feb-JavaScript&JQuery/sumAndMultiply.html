@@ -1,0 +1,36 @@
+
+<!-- Create a web page to perform Sum operation using  JavaScript -->
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+<input type="button" onclick="f1()"
+			value="Sum"  />	 	
+ </br>
+<p id="p1"></p>
+
+<script>
+	function  f1()
+	{
+	  let num1Obj = document.getElementById("t1");
+	  let num2Obj = document.getElementById("t2");
+	  let totalSumObj = document.getElementById("p1");
+      let num1 = num1Obj.value;
+      let num2 = num2Obj.value;
+      let sum = parseInt(num1) + parseInt(num2);
+      let mul = num1*num2;
+      console.log(sum);
+      totalSumObj.innerHTML = "Result: " + mul;
+
+
+	 }
+</script>
+</body>
+</html>

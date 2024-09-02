@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Working with JavaScript</h3>
+    <hr />
+
+
+    <fieldset>
+        <legend>User Login </legend>
+
+        Emp No. : <input type="text" id="t1" />
+        <br /> <br />
+        Emp Name : <input type="text" id="t2" />
+        Job : <input type="text" id="t3" />
+
+        Salary : <input type="text" id="t4" />
+
+        <br /><br />
+        <input type="button" onclick="f1()" value="Login" />
+        <p id="p1"></p>
+    </fieldset>
+
+
+
+
+
+    <script>
+
+        function f1() {
+
+            let empNoObj = document.getElementById("t1").value;
+            let empNameObj = document.getElementById("t2").value;
+            let jobObj = document.getElementById("t3").value;
+            let salaryObj = document.getElementById("t4").value;
+
+            console.log("Empno: " + empNoObj + ", Ename : " + empNameObj + 
+                ", Job : " + jobObj + ", Salary : " + salaryObj
+            )
+
+
+            
+
+            
+            
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>

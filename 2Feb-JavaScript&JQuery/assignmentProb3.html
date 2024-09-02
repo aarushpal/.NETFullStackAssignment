@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+Operation :
+<input type="button" onclick="performOperation(event)" id="+" value="+"/>
+<input type="button" onclick="performOperation(event)" id="-"  value="-"/>
+<input type="button" onclick="performOperation(event)" id="*"  value="*"/>
+<input type="button" onclick="performOperation(event)" id="/"  value="/"/>
+<br></br>
+	
+ </br>
+<p id="p1"></p>
+		<script> 
+		
+			  function performOperation(event) 
+			  {	 	 
+				 let paraObj = document.getElementById("p1");
+				 let num1Obj = parseInt(document.getElementById("t1").value);
+				 let num2Obj = parseInt(document.getElementById("t2").value);
+                 let result;
+
+                 switch(event.target.value) {
+                    case "+" :
+                        result = num1Obj + num2Obj;
+                        break;
+                    case "-" :
+                        result = num1Obj - num2Obj;
+                        break;
+                    case "*" :
+                        result = num1Obj * num2Obj;
+                        break;
+                    case "/" :
+                        result = num1Obj / num2Obj;
+                        break;
+                    default:
+                        result = 0;
+                 }
+
+                 paraObj.innerHTML = "Result : " + result;
+
+				 
+			  }	
+
+		</script>  
+	</body>
+</html>
